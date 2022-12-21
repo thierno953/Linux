@@ -10,21 +10,20 @@
 * To view only one environment variable
 ##### echo $<name_of_variable>
 
-### How to unset environment variables?
 
-To set the environment variable temporary
+* To set the environment variable temporary
 ```bash
 export TESTVAR=1
 ```
-To set the environment variable permanently 
+* To set the environment variable permanently 
 ```bash
 vi .bashrc
 TESTVAR='123'
 export TESTVAR  
 ```
-To set the global environment variable  permanently 
+* To set the global environment variable  permanently 
 ```bash
-vi /etc/profile 
+vi /etc/profile or /etc/bashrc
 TESTVAR='123'
 export TESTVAR
 ```

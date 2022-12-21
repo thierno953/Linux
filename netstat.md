@@ -1,4 +1,4 @@
-# Netstat
+# Netstat (Network Monitoring and Troubleshooting)
 
 * Netstat is a very useful command line tool that can be used to troubleshoot network issues.
 

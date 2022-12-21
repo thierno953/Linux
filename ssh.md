@@ -51,7 +51,7 @@ ssh-copy-id
 ssh-keygen
 ls .ssh
 ssh-copy-id ssh user_name@host(IP/Domain_name)
-ssh ssh user_name@host(IP/Domain_name)
+ssh user_name@host(IP/Domain_name)
 ```
 
 

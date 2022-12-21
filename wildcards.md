@@ -17,7 +17,12 @@ ls -l file*
 rm file*
 ```
 vi names.txt
-(John)
+```
+John
+Pierre
+Jane
+
+ ```
 ```bash
 cat names.txt | grep ^J
 cat names.txt | grep ^n

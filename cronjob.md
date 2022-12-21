@@ -9,14 +9,14 @@
 * crontab -e (to edit or add new jobs)
 
 ## Cron Job Format
-
+```
 * * * * * cd /home/paul/scripts && ./create_file.sh
 -       -
 -       -
 ---------
 Schedule
 expression
-
+```
 ```
  *                *                  *                          *                  *
 minunte(0-59)    hour (0-23)      day of mounth(1-31)     mounth(1-12)      day of week (0-6) (Sunday = 0)

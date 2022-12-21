@@ -1,9 +1,9 @@
 # TOP COMMAND
-* change beautiful value in linux
-* good value for money with top
-* top Unix command
-* how to change priority
-* top linux command
+* Change beautiful value in linux
+* Good value for money with top
+* Top Unix command
+* How to change priority
+* Top linux command
 * Linux system watch command
 
 * How to monitor Linux system using Top command.

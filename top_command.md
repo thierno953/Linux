@@ -17,16 +17,16 @@
 
 ### Shortcuts for the main Linux commands:
 ```bash
-top then c = displays the absolute path of the commands
-top then k = kill a process by PID
-top then n = to change the no. of the displayed task
-top then d, s = change refresh interval
+top then c = Displays the absolute path of the commands
+top then k = Kill a process by PID
+top then n = To change the no. of the displayed task
+top then d, s = Change refresh interval
 top then M = To sort the running linux process by memory usage
-top then r = you can change the nice value of a PID
-top then u= to filter the task by user
+top then r = We can change the nice value of a PID
+top then u = To filter the task by user
 top then f = Field management
-top then h = help
+top then h = Help
 top then z or b = Toggle: 'z' color/mono; 'b' bold/reverse (only if 'x' or 'y')
-top then x y = sort field 'x'; 'y' executes tasks
-top then i = process that consumes memory
+top then x y = Sort field 'x'; 'y' executes tasks
+top then i = Process that consumes memory
 ```

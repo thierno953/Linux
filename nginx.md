@@ -107,23 +107,6 @@ ls -ltr
 less access.log
 less error.log
 ```
-### How to solve access denied issue in NGINX reverse proxy?
-
-* [crit] 59982#0: *2 connect() to 127.0.0.1:8080 failed (13: Permission denied) 
-* while connecting to upstream, client: 192.168.29.179, server: _, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8080/", host: "192.168.29.41"
-
-#### Solution:
-
-* List of all the httpd SELinux boolean.
-```bash
-#getsetbool -a | grep httpd
-```
-#### Enable the network connect boolean
-```bash
-#getsetbool httpd_can_network_connect on -P
-```
-
-
 
 
 

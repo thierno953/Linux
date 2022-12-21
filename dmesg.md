@@ -23,13 +23,16 @@ dmesg | tail -10
 
 dmesg command
 
-dmesg | grep search_string
+dmesg | grep <search_string>
 ```
 We can search related to 
 
 * memory
 * usb
 * sda
+* ram
+* tty
+* error
 
 ```bash
 dmesg

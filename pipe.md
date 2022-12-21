@@ -10,7 +10,7 @@
 
 * The Linux pipe and tee commands are two powerful tools that can be used to manipulate files and streams.
 
-## The Linux pipe and tee commands are used to copy files from one location to another. We can also use the Xargs command, which is used to automatically execute commands after a certain number of arguments have been supplied.
+#### The Linux pipe and tee commands are used to copy files from one location to another. We can also use the Xargs command, which is used to automatically execute commands after a certain number of arguments have been supplied.
 
 ```bash
 ps -ef | grep httpd

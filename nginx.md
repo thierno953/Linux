@@ -70,7 +70,7 @@ Internet   <----------->   Reverse Proxy(NGINX)  <----------->  Origin Server(Ex
 systemctl status nginx.service
 ifconfig
 ```
-* Changes in the conf
+#### Changes in the conf
 ```bash
 Config Location:/etc/nginx/nginx.conf
 ```

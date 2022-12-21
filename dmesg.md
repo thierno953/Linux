@@ -10,6 +10,7 @@ The ring buffer stores information about hardware, device driver initialization,
 
 * dmesg command
 ```bash
+sudo sysctl kernel.dmesg_restrict=0
 dmesg
 dmesg -HTx (human readable, timestamp, decode) 
 ```

@@ -42,6 +42,8 @@ curl -I 127.0.01
 ```bash
 /etc/nginx/nginx.conf
 /usr/share/nginx/html
+su -
+cd /etc/nginx/
 less nginx.conf
 cd /usr/share/nginx/html
 ls -ltr

@@ -20,7 +20,7 @@ ping -i 2 www.google.com
 ping -f www.google.com
 ping -s 500 www.google.com 
 ping -w 10 www.google.com
-ping -D www.google.com 
+
 ```
 #### got into root:
 

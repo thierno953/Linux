@@ -5,10 +5,10 @@
 ##### example: VARIABLE_NAME=VALUE
 
 ### How to view Environment Variables?
-* To view all the environment variables
- #printenv or env
+* To view all the environment variables 
+##### printenv or env
 * To view only one environment variable
-#echo $<name_of_variable>
+##### echo $<name_of_variable>
 
 ### How to unset environment variables?
 

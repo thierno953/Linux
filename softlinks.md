@@ -13,10 +13,9 @@ Hard link: Renaming, Deleting or removing the file will not effect the link. ( l
 
 ###### example:
 
-
-### windows 1                                                 =                    windows 2
                                                           
 ```bash
+### windows 1                                                   ### windows2
 ln -s /home/user/folder1/folder2/folder3/myfile1 softlink     =    cd folder1/folder2/folder3/
 ls -ltr                                                       =     ls
 cat softlink                                                  =    cat myfile_1

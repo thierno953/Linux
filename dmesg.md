@@ -47,8 +47,8 @@ dmesg -HTx | grep sda
 dmesg -HTx | grep error
 dmesg -HTx | grep warn
 
-dmesg -w
-dmesg -c
+dmesg -w >>>>>>>>>>>> For live monitoring
+dmesg -c >>>>>>>>>>>> To clear the ring buffer
 dmesg -l warn
 dmesg -l debug
 ```

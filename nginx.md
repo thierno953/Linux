@@ -15,7 +15,7 @@ sudo vi /etc/yum.repos.d/nginx.repo
 ```bash
 [nginx]
 name=nginx repo
-baseurl=https://nginx.org/packages/centos/8/$...
+baseurl=https://nginx.org/packages/centos/8/$basearch/
 gpgcheck=0
 enabled=1
 ```

@@ -8,8 +8,10 @@ We can call it a shortcut.
 
 #### Difference between Soft and Hard link:
 
-Soft link: Link will be removed if original file removed or deleted. ( ln -s ).
-Hard link: Renaming, Deleting or removing the file will not effect the link. ( ln ).
+##### Soft link: 
+* Link will be removed if original file removed or deleted. ( ln -s ).
+##### Hard link: 
+* Renaming, Deleting or removing the file will not effect the link. ( ln ).
 
 ###### example:
 

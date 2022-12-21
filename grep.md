@@ -17,9 +17,8 @@
 * We can use egrep command for the multiple keywords search using grep command in Linux
 * If you just wanna search but don't want to print on terminal or If you want to suppress error message using grep command in Linux
 
-### ex: 
+##### ex: myfile 
 ```bash
-vi myfile
 id, firstname, lastname, email, profession
 1, John, Doe, john@gmail.com, frontend 
 2, Paul, Dupont, paul@gmail.com, backend

@@ -64,3 +64,28 @@ else
   echo "You are not root"
 fi
 ```
+## Exit Status
+* Return exit status of last or previous command.
+* Return 0 - Successful
+* Return 1 - Failed/Negative response
+
+```
+ping -c1 www.google.com
+echo $?
+ping -c1 localhost.com
+echo $?
+```
+```
+#!/bin/bash
+
+echo ==========check ping====================
+ping -c1 www.google.com &> /dev/null
+
+if [ $? -eq 0 ]
+then
+     echo "Connection Successfull"
+else
+     echo "Connection Failed"
+fi
+```
+

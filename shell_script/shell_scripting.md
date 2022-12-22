@@ -54,7 +54,7 @@ ls -ltr
 
 
 ##### How to take input from user ?
-- if-else:
+##### if-else:
 ```bash
 if [$age -eq 18]
 then
@@ -65,7 +65,7 @@ fi
 ```
 ###### example:
 
-user input:
+##### user input:
 ```bash
 #!/bin/bash
 echo what is your age ?
@@ -84,6 +84,23 @@ ls -ltr
 ```
 
 ##### switch:
+```
+#!/bin/bash
+
+echo Hey choose an option
+echo
+echo a = To see the current date
+echo b = List all the files in current dir
+
+read choice
+
+case $choice in
+     a) date;;
+     b) ls;;
+     *) echo "Non a valid input"
+esac
+```
+##### example
 ```bash
 #!/bin/bash
 echo Press any option

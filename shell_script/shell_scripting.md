@@ -125,9 +125,9 @@ ls -ltr
 
 ##### forloop:
 ```
-for i in 1 2 3 4 5
+for num in 1 2 3 4 5
 do
-   echo Number is $i
+   echo Number is $num
 done
 
 Other ways to write For loop
@@ -137,7 +137,7 @@ for p in {1..20}
 ##### example
 ```bash
 #!/bin/bash
-for num in {1..10} or for num in $@
+for num in {1..3} or for num in $@
 do
     echo Number is $num or echo "is $num"
 for task in Read Write Blog Site Sleep Eat
@@ -150,14 +150,15 @@ chmod u+x forloop.sh
 ls -ltr
 ./forloop.sh
 ```
-##### while:
+##### while loop:
 ```bash
 #!/bin/bash
-num=10
 count=0
+num=10
+
 while [$count -le $num]
 do
-  echo $count
+  echo Numbers are $count
   let count++
 done
 ```
@@ -168,6 +169,15 @@ ls -ltr
 ```
 
 #### Iterate values from file:
+```
+hosts="<path_of_file_named_items>"
+
+for item in $(cat $items)
+do
+   echo $item
+done
+```
+
 ```bash
 ### windows1   =    ### windows2
 name:          =   filter_iterate.sh 

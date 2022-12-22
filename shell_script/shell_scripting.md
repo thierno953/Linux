@@ -139,7 +139,10 @@ for p in {1..20}
 #!/bin/bash
 for num in {1..10} or for num in $@
 do
-   echo Number is $num or echo "is $num"
+    echo Number is $num or echo "is $num"
+for task in Read Write Blog Site Sleep Eat
+do
+    echo My task is $task
 done
 ```
 ```bash

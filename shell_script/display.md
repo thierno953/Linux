@@ -31,7 +31,7 @@ To call the function, just use the name of the function like.
 
 myfun
 ```
-### Use the arguments/parameters in function
+### Let's use the arguments/parameters in function
 ```
 addition() {
    local num1=$1
@@ -40,4 +40,18 @@ addition() {
    echo "Sum of $num1 and $num2 is $sum"
 }
 myfun 12 13
+```
+## Shell Variables
+* RANDOM - A random integer between 0 and 32767 is generated
+* UID - User ID of the user logged in
+
+##### Example of ID:
+* To check if the script executed with root user or not.
+```
+# Generate a no, between 1 and 6
+NUM=$(( $RANDOM % 6 + 1 ))
+echo "Result is $NUM"
+-------------------
+chmod 777 dice.sh
+./dice.sh
 ```

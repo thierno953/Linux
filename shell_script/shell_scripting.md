@@ -105,7 +105,7 @@ esac
 #!/bin/bash
 echo Press any option
 echo 1=Show date
-echo 2=List files
+echo 2=List files in current dir
 echo 3=Show current path
 
 read choice
@@ -113,7 +113,8 @@ read choice
 case $choice in
    1) date;;
    2) ls -ltr;;
-   3) echo Invalid input;;
+   3) pwd;;
+   *) echo Invalid input
 esac
 ```
 ```bash
@@ -123,6 +124,17 @@ ls -ltr
 ```
 
 ##### forloop:
+```
+for i in 1 2 3 4 5
+do
+   echo Number is $i
+done
+
+Other ways to write For loop
+for j in eat Paul
+for p in {1..20}
+```
+##### example
 ```bash
 #!/bin/bash
 for num in {1..10} or for num in $@

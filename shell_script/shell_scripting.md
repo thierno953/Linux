@@ -33,15 +33,25 @@ Less Than                |      -lt
 ##### Variable:
 ```bash
 #!/bin/bash
+var_name=value
+var_name=$(hostname)
+echo $var_name
+```
+#### exmaple
+```
+#!/bin/bash
 name=Paul
 age=20
 echo $name $age
+host=$(hostname)
+echo My hostname is $host
 ```
 ```bash
 chmod u+x variable.sh
 ls -ltr
 ./variable.sh
 ```
+
 
 ##### How to take input from user ?
 - if-else:

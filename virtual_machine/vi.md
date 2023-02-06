@@ -6,7 +6,7 @@ A text editor which enables you to create and manipulate data in linux file
 ```bash
 i - insert
 
-O - insert ont next line
+O - insert on next line
 
 a - insert after a space
 

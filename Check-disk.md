@@ -68,3 +68,15 @@ awk command
        Action: It is a logic to perform action on each row/record
 
 ```
+
+```bash 
+#!/bin/bash
+echo "Check disk usage in Linux system"
+disk_size=`df -h grep "/dev/sda3"|awk '{print $5}'|cut -d '%' -f 1`
+echo "$disk_size% of disk is failled"
+then 
+    echo "disk is utilized more than 80%, expand disk or delete files soon"
+else
+    echo "enaugh disk is available"
+if
+```

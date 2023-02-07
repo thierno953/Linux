@@ -49,4 +49,8 @@ By default tail command reads last 10 lines from a file
 ```bash 
 tail -n filename
 ```
-- This option displays the last n number of lines of lines of the document
+This option displays the last n number of lines of lines of the document
+
+-----------------
+awk command
+-----------------

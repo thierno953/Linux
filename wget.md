@@ -28,6 +28,6 @@ else
         echo "binary does not exists in system first we need to download it"
         wget https://github.com/prometheus/prometheus/releases/download/v2.42.0/prometheus-2.42.0.linux-amd64.tar.gz
         tar -zxvf /home/vagrant/prometheus-2.42.0.linux-amd64.tar.gz
-        echo "file has been extracted, you can start prometheus"
+        echo "file has been extracted, you can start prometheus" 
 fi
 ```

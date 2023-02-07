@@ -38,3 +38,8 @@ else
         echo "not installing"
 fi
 ```
+```shell
+chmod u+x <variable.sh>
+ls -ltr
+./variable.sh
+```

@@ -60,5 +60,11 @@ awk command
 ```bash 
        awk[options] '[selection_criteria] {action}' input-file
        cat input-file | awk [options]'[selection_criteria] {action}' input-file
-       Awk can take the following options
+       Awk can take the following options:
+           -F fs  To specific a field separator: (Default separator is tab and space)
+           -f file  To specific a file that contains awk script.
+            -v var=value   To declare a variable.
+       Selection criteria: pattern/condition
+       Action: It is a logic to perform action on each row/record
+
 ```

@@ -98,3 +98,19 @@ Sort command
 - -> sort -r : Prints the output in reverse order.
 - -> sort -h : --human-numeric-sort (compare human readable numbers)
 - -> sort -hr : Combined together it compares according to the string numerical value and reverses the result of comparison.
+----------------
+
+-----------------
+- Command-line arguments are parameters that are passed to a script while executing them in the bash shell. They are also known as positional parameters in linux.
+- Let's say I am running the running the script as:
+- ./commandlinearguments.sh devops techstack learning.
+```bash 
+How to Access arguments? |                 Description
+-------------------------|---------------------------------
+$0                       |  Script Name 
+$1                       |  First Parameter of the script
+$@                       |  Complete list of argument
+$#                       |  Total number of parameters
+$$                       |  Process id of the script
+$?                       |  Exit code for the script
+```

@@ -66,7 +66,6 @@ awk command
            -v var=value   To declare a variable.
        Selection criteria: pattern/condition
        Action: It is a logic to perform action on each row/record
-
 ```
 
 ```bash 
@@ -80,3 +79,12 @@ else
     echo "enaugh disk is available"
 if
 ```
+-----------------
+du command
+-----------------
+- The du command is a standard Linux/Unix command that allows a user to get disk usage information quickly.
+- Flags:
+- -> -h : The -h flag prints size outputs ,in a human-readable format.
+- -> -a : It lists the sizes of all files and directories in the given file path.
+- Usage:
+- du -ah /tmp : It list the size of all files and directory in the path /tmp in human readable format. 

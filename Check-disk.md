@@ -127,3 +127,13 @@ du -ah $path | sort -hr | head -n 5 > /tmp/filesize.txt
 echo "This is the list of big files in the file system $path"
 cat /tmp/filesize.txt
 ```
+-----------------
+Find command
+-----------------
+- It can be used to find files and directories and perform subsequent operations on them. It supports searching by file, folder, name, creation date, modification date, owner and permissions.
+- Usage:
+- find . File_name :->file the file with name File_name in the current working directory.
+- We can specify any other location also.
+- Modified timestamp (mtime) indicates the last time the contents of a file were modified. For example, if new contents were added, deleted, or replace in d file the modified timestamp is changed.
+- +n for greater then n, -n for less than n, n for exactly n.
+- -mtime +30 -> Get the files greater than 30 days.

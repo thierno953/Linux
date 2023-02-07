@@ -98,8 +98,6 @@ Sort command
 - -> sort -r : Prints the output in reverse order.
 - -> sort -h : --human-numeric-sort (compare human readable numbers)
 - -> sort -hr : Combined together it compares according to the string numerical value and reverses the result of comparison.
-----------------
-
 -----------------
 - Command-line arguments are parameters that are passed to a script while executing them in the bash shell. They are also known as positional parameters in linux.
 - Let's say I am running the running the script as:
@@ -113,4 +111,14 @@ $@                       |  Complete list of argument
 $#                       |  Total number of parameters
 $$                       |  Process id of the script
 $?                       |  Exit code for the script
+```
+
+```bash 
+#!/bin/bash
+echo "This program get first 10 biggest file in the file system passed via positional argument"
+path="$1"
+echo $path
+du -ah $path | sort -hr | head -n 5 > /tmp/filesize.txt
+echo "This is the list of big files in the file system $path"
+cat /tmp/filesize.txt
 ```

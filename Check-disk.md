@@ -8,7 +8,7 @@ Read a file content?
 -----------------
 Read a file content by opening it
 ```bash 
-using vi/vim/nano editors .
+using vi / vim / nano editors .
 ```
 Read a file content without opening it
 ```bash 
@@ -18,3 +18,35 @@ Read a file content with conditions
 ```bash 
 using more, tail, grep, awk, sed.
 ```
+-----------------
+Read a file content with conditions...
+-----------------
+More command example:
+```bash 
+more -n filename.txt
+
+Displays text upto specified line
+```
+Read +n filename.txt
+```bash 
+The text is displayed from the specified line
+```
+head command Example:
+```bash 
+head filename
+```
+By default head command reads top 10 lines from a file
+```bash 
+head -n filename
+
+This option displays the top n number of lines of the document
+```
+tail command Example:
+```bash 
+tail filename
+```
+By default tail command reads last 10 lines from a file
+```bash 
+tail -n filename
+```
+- This option displays the last n number of lines of lines of the document

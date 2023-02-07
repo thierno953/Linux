@@ -60,5 +60,5 @@ awk command
        ```bash 
        awk[options] '[selection_criteria] {action}' input-file
        cat input-file | awk [options]'[selection_criteria] {action}' input-file
-       Awk can take the following options:
+       Awk can take the following options
        ```

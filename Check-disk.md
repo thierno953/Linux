@@ -134,6 +134,15 @@ Find command
 - Usage:
 - find . File_name :->file the file with name File_name in the current working directory.
 - We can specify any other location also.
+-----------------
+Mtime command
+-----------------
 - Modified timestamp (mtime) indicates the last time the contents of a file were modified. For example, if new contents were added, deleted, or replace in d file the modified timestamp is changed.
 - +n for greater then n, -n for less than n, n for exactly n.
 - -mtime +30 -> Get the files greater than 30 days.
+-----------------
+Demo Time
+-----------------
+- find . -mtime +30 -delete
+- touch -a -m -t 201512180130.09 fileName.ext
+- -a = accessed -m = modified -t = timestamp - use [[CC]YY]MMDDhhmm[.ss] time format

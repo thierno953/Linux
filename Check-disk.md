@@ -54,3 +54,7 @@ This option displays the last n number of lines of lines of the document
 -----------------
 awk command
 -----------------
+- The awk command is a powerful method for processing or analyzing text or data files, which are organized by lines (rows or records) and columns(fileds).
+- We can use awk as a linux command and alson as a scripting language like bash shell scripting.
+- Simple awk command syntax:
+       - awk

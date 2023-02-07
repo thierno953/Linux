@@ -57,4 +57,8 @@ awk command
 - The awk command is a powerful method for processing or analyzing text or data files, which are organized by lines (rows or records) and columns(fileds).
 - We can use awk as a linux command and alson as a scripting language like bash shell scripting.
 - Simple awk command syntax:
-       - awk
+       ```bash 
+       awk[options] '[selection_criteria] {action}' input-file
+       cat input-file | awk [options]'[selection_criteria] {action}' input-file
+       Awk can take the following options:
+       ```

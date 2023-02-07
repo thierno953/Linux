@@ -88,3 +88,13 @@ du command
 - -> -a : It lists the sizes of all files and directories in the given file path.
 - Usage:
 - du -ah /tmp : It list the size of all files and directory in the path /tmp in human readable format. 
+
+-----------------
+Sort command
+-----------------
+- SORT command is used to a file, arranging the records in a particular order.
+- Flags:
+- -> sort -n : Sort the file the in numerical order(less to more)
+- -> sort -r : Prints the output in reverse order.
+- -> sort -h : --human-numeric-sort (compare human readable numbers)
+- -> sort -hr : Combined together it compares according to the string numerical value and reverses the result of comparison.

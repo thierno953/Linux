@@ -23,7 +23,7 @@ CMD                 Command                                 Any command to be ex
 ### Examples of Cron jobs 1. Scheduling a Job For a Specific Time 
 - The basic usage of cron is to execute a job specific time as shown below. This will execute the Full backup shell script (full-backup) on 10th June 08:30 AM. The time field uses 24 hours format. So, for 8 AM use 8, and for 8 PM use 20.
 - 30 08 10 06 * /home/vagrant/full-backup
-- 
+
 ```bash
 * * * * * /home/vagrant/docker_service_check.sh > /dev/null
 ```

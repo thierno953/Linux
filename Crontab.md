@@ -34,7 +34,7 @@ then
 	echo "service is running fine....."
 else
 	echo "service is not running"
-  systemctl start docker
+        systemctl start docker
 fi
 ```
 - crontab -e

@@ -64,7 +64,7 @@ $1 ... $n       |         Positional argument indicating from 1 ..n. If the argu
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 $0              |This is not taken into the argument list as this indicates the "name" of the shell program. In the above example, $0 is "disPlyArgum.sh" 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-$@              | Values of the arguments that are passed in the program. This will be much helpful if we are not sure about the number of arguments that                 |              got passed.
+$@             |Values of the arguments that are passed in the program. This will be much helpful if we are not sure about the number of arguments.       
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 $#              | Total number of arguments and it is a good approach for loop concepts.
 -------------------------------------------------------------------------------------------------------------------------------------------------------

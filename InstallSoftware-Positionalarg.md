@@ -55,3 +55,14 @@ do
 
 done
 ```
+
+## Command Line arguments Continued...
+```bash 
+Special Variable                Special Variable's details
+-----------------------------------------------------------------------------------------------------------------------------------------------
+$1 ... $n                      Positional argument indicating from 1 ..n. If the argument is like 10, 11 onwards, it has to be indicated as                                               ${10},${11}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+$0                             This is not taken into the argument list as this indicates the "name" of the shell program. In the above example, $0 is                                  "displayPositionalArgument.sh"       
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+$@
+```

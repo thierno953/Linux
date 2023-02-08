@@ -25,5 +25,19 @@ CMD                 Command                                 Any command to be ex
 - 30 08 10 06 * /home/vagrant/full-backup
 
 ```bash
+#!/bin/bash
+echo "====status check docker service===="
+status="`systemctl status docker|awk 'NR==3 {print}'|cut -d ':' -f 2|cut -d '(' -f 1`"
+echo $status
+if [ $status = "active"  ];
+then
+	echo "service is running fine....."
+else
+	echo "service is not running"
+  systemctl start docker
+fi
+```
+- crontab -e
+```bash
 * * * * * /home/vagrant/docker_service_check.sh > /dev/null
 ```

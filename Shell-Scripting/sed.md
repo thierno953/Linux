@@ -1,13 +1,28 @@
-# SED 
-### Sed ("stream editor") is a Unix utility that parses and transforms text, using a simple, compact programming language. 
+# What is sed?
 
-* Sed is a line-oriented text processing utility: it reads text, line by line, from an input stream or file, into an internal buffer called the pattern space. Each line read starts a cycle.
-* To the pattern space, sed applies one or more operations which have been specified via a sed script. sed implements a programming language with about 25 commands that specify the operations on the text.
-* For each input line, after running the script, sed ordinarily outputs the pattern space (the line as modified by the script) and begins the cycle again with the next line. 
+- Sed command statds for stream editor.
+- Sed command performs lot of functions like :
+- a) - Viewing file contents
+- b) - Searching
+- c) - Find and Replace
+- d) - Insertion and deletion
+- Sed also supports regular expressions which allows it perform complex pattern matching.
 
-* Other end-of-script behaviors are available through sed options and script commands, e.g. d to delete the pattern space, q to quit, N to add the next line to the pattern space immediately, and so on. 
+# Avantages of sed over vi/vim editor:
 
-* Thus a sed script corresponds to the body of a loop that iterates through the lines of a stream, where the loop itself and the loop variable (the current line number) are implicit and maintained by sed.
+- Sed can perform any operations on file without opening the file.
+- Sed syntax:
+
+```bash
+Sed [options] commands [file-to-work-with-sed]
+```
+
+# Find and replace with sed
+
+- Sed 's/root/devopsclass' filename (Substitute root with devops 1st word occurence with new word).
+- Sed 's/root/devopsclass/g' filename (Substitute root with devops global in whole file).
+- Sed -i.back 's/root/devopsclass/g' filename (Changed original file itself);
+- Sed '/search/s/old/new/g' filename (Replaces the old word with new word if that new line consists of search word).
 
 
 #### data

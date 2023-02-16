@@ -78,3 +78,64 @@ case $choice in
        ;;
 esac
 ```
+
+===================================================================
+
+```bash
+#!/bin/bash
+echo "This is function test"
+disk_utilization()
+{
+   disk=`df -h`
+   echo "disk utilization is : $disk"
+}
+if [[ $? -eq 0 ]];
+then
+   echo "this is disk usage report"
+   disk_utilization
+else
+   echo "disk has some issue "
+fi
+```
+
+===================================================================
+
+```bash
+#!/bin/bash
+clear
+echo "--------------------------------"
+echo "--------welcome to calculator---"
+echo "--------------------------------"
+read_input()
+{
+        read -p "Enter first number: " num1
+        read -p "Enter second number: " num2
+}
+echo -e "[a]addition\n[b]Subtraction\n[c]Multiplication\n[d]Division\n"
+read -p "Enter your choice: " choice
+case $choice in
+   [aA])
+        read_input
+        result=$((num1+num2))
+        echo "The result for your choice is: $result"
+        ;;
+   [bB])
+        read_input
+        result=$((num1-num2))
+        echo "The result for your choice is: $result"
+        ;;
+   [cC])
+        read_input
+        result=$((num1*num2))
+        echo "The result for your choice is: $result"
+        ;;
+   [dB])
+        read_input
+        result=$((num1/num2))
+        echo "The result for your choice is: $result"
+        ;;
+    *)
+       echo "Wrong choice"
+       ;;
+esac
+```

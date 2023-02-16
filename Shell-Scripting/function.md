@@ -11,7 +11,7 @@ function funtion_name {
     commands/statements
 }
 
-funtion_name {
+funtion_name() {
     commands/statements
 }
 ```

@@ -76,6 +76,24 @@ groupadd <group_name>
 less /etc/group
 ```
 
+# To add a user to the group
+
+```bash
+usermod -aG <group_name><user_name>
+```
+
+# How to delete a group ?
+
+```bash
+groupdel <group_name>
+```
+
+# To remove a user from the group
+
+```bash
+gpasswd -d <user_name><group_name>
+```
+
 # Files
 
 ### In files, we can check

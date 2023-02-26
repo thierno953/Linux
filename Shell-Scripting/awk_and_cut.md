@@ -11,7 +11,7 @@ ID Name Salary Country
 4  Maria  2500  Italia
 ```
 
-###  names
+### names
 
 ```bash
 ID Name
@@ -39,34 +39,52 @@ id, firstname, lastname, email,          profession, country
 
 ```bash
 awk '{print $2}' data
+
 awk '{print $2, $4}' data
+
 awk '{print $NF} data
+
 awk '{if($4 > 2000) print $0}' data
+
 awk '{print if($2=="Jonh"){$3=3000} print $0}' data
+
 awk 'NF==0 {print NR}' data
 ```
+
 ```bash
 awk '{print $NF $0}' names
+
 awk '{print NR, $0}' names
+
 awk '{print NR ": " $0}' names
+
 cut -c1.5 names
 ```
+
 ```bash
 awk -F '{print $4}' countries
+
 awk '/Belgium/ {print $0}' countries
+
 awk '{print NR "- " $0}' countries
+
 awk 'NR==4 {print $0}' countries
+
 awk 'NR=="2", NR=="4" {print $0}' countries
+
 awk 'END {print NR}' countries
+
 awk 'BEGIN{for(i=0;i<=10;i++}-) print i;}'
+
 awk 'BEGIN{while(i<10){i++; print "num is " i}}'
+
 cut -d, -f 2 countries
+
 cut -d, -f 1- countries --output-delimiter=" | "
+
 cut -d, -f 1- countries --output-delimiter=" : "
 ```
+
 ```bash
 ls -ltr | awk '{print $NF}
 ```
-
-
-

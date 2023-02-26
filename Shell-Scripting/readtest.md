@@ -11,7 +11,7 @@ echo $password
 read -p "It will timeout in 3 seconds: " -t 10
 ```
 
-# While loop Syntax to read a file
+## While loop Syntax to read a file
 
 ```bash
 while read -r line;

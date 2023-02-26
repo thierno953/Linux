@@ -36,7 +36,7 @@ Sed -i '1a -----' filename
 i and a (Insert before and insert after)
 ```
 
-#### data
+ **data**
 
 ```bash
 ID Name Salary Country

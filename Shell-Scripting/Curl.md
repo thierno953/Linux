@@ -4,12 +4,12 @@
 
 #### Curl flags:
 
-- 1. **-s** : Silent request, it will not show progress bar.
-- 2. **-w** : It will display the information on terminal.
-- 3. "**%{http_code}**" : To get the http code and for success its 200.
+- **-s** : Silent request, it will not show progress bar.
+- **-w** : It will display the information on terminal.
+- "**%{http_code}**" : To get the http code and for success its 200.
 
 ```bash
-#!/bin/bash 
+#!/bin/bash
 
 URL="https://github.com/Kritika-git/Docker-Projects"
 

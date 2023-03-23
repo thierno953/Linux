@@ -99,7 +99,7 @@ echo "$disk_size% of disk is failled"
 then
     echo "disk is utilized more than 80%, expand disk or delete files soon"
 else
-    echo "enaugh disk is available"
+    echo "enough disk is available"
 if
 ```
 

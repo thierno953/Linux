@@ -108,12 +108,12 @@ if
 
 ## du command
 
-- The du command is a standard Linux/Unix command that allows a user to get disk usage information quickly.
+- The **du** command is a standard Linux/Unix command that allows a user to get disk usage information quickly.
 - Flags:
-- -> -h : The -h flag prints size outputs ,in a human-readable format.
-- -> -a : It lists the sizes of all files and directories in the given file path.
+- -> **-h** : The -h flag prints size outputs ,in a human-readable format.
+- -> **-a** : It lists the sizes of all files and directories in the given file path.
 - Usage:
-- du -ah /tmp : It list the size of all files and directory in the path /tmp in human readable format.
+- **du -ah /tmp** : It list the size of all files and directory in the path /tmp in human readable format.
 
 ---
 
@@ -121,10 +121,10 @@ if
 
 - SORT command is used to a file, arranging the records in a particular order.
 - Flags:
-- -> sort -n : Sort the file the in numerical order(less to more)
-- -> sort -r : Prints the output in reverse order.
-- -> sort -h : --human-numeric-sort (compare human readable numbers)
-- -> sort -hr : Combined together it compares according to the string numerical value and reverses the result of comparison.
+- -> **sort -n** : Sort the file the in numerical order(less to more)
+- -> **sort -r** : Prints the output in reverse order.
+- -> **sort -h** : --human-numeric-sort (compare human readable numbers)
+- -> **sort -hr** : Combined together it compares according to the string numerical value and reverses the result of comparison.
 
 ---
 

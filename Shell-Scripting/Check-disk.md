@@ -94,7 +94,7 @@ This option displays the last n number of lines of lines of the document
 ```bash
 #!/bin/bash
 echo "Check disk usage in Linux system"
-disk_size=`df -h grep "/dev/sda3"|awk '{print $5}'|cut -d '%' -f 1`
+disk_size=`df -h | grep "/dev/sda3"|awk '{print $5}'|cut -d '%' -f 1`
 echo "$disk_size% of disk is failled"
 then
     echo "disk is utilized more than 80%, expand disk or delete files soon"

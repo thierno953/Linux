@@ -10,9 +10,17 @@
 
 ### Files
 
-* /etc/passwd
-* /etc/group
-* /etc/shadow
+In files, we can check
+
+* In group how many users are added
+* UserId GroupID HomeDIR and Shell Type, description about user
+* In shadow file, when was last password changed, max day to expire etc.
+
+```bash
+/etc/passwd
+/etc/group
+/etc/shadow
+``` 
 
 **How to create a user ?**
 
@@ -52,15 +60,40 @@ usermod -g <group_name> <user_name>
 **Other usermod options:**
 
 ```bash
--m -d /home/newfolder  #to move the content of home folder to this new folder
--p                     #we can use passwd command also)
--s                     #shell type
--L -U                  #Lock/UnLock a user
+usermod -m -d /home/newfolder  #to move the content of home folder to this new folder
+usermod -p                     #we can use passwd command also)
+usermod -s                     #shell type
+usermod -L -U                  #Lock/UnLock a user
 ```
 
 ```bash
-usermod -m -d /home/<user_name><user_name>
+usermod -m -d /home/<user_name> <user_name>
 ls -ld newfolder/
 passwd <user_name>
 su - <user_name>
+```
+
+**How to create a group?**
+
+```bash
+groupadd <group_name>
+less /etc/group
+```
+
+**To add a user to the group**
+
+```bash
+usermod -aG <group_name> <user_name>
+```
+
+**How to delete a group ?**
+
+```bash
+groupdel <group_name>
+```
+
+**To remove a user from the group**
+
+```bash
+gpasswd -d <user_name> <group_name>
 ```

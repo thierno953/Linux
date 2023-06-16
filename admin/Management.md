@@ -34,3 +34,17 @@ userdel <name_of_user>
 userdel -r  #will remove home directory
 userdel -f  #force delete even if the user is logged in
 ``` 
+
+**How to modify a user ?**
+
+To add user to a new group, but default group will remain same.
+
+```bash
+usermod -G <group_name> <user_name>
+```
+
+**To change the default group**
+
+```bash
+usermod -g <group_name> <user_name>
+```

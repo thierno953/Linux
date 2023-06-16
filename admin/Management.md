@@ -1,6 +1,6 @@
 # Linux User Account Management
 
-### Topics
+**Topics**
 
 * useradd
 * userdel
@@ -8,7 +8,7 @@
 * groupadd
 * groupdel
 
-### Files
+**Files**
 
 In files, we can check
 

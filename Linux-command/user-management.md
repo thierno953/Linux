@@ -6,7 +6,7 @@
 - /etc/group
 - /etc/shadow
 
-# How to create a user ?
+How to create a user ?
 
 ```shell
 useradd <user_name>
@@ -16,13 +16,13 @@ less /etc/passwd
 useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name>
 ```
 
-# How to identify if a user is created ?
+How to identify if a user is created ?
 
 ```shell
 id <user_name>
 ```
 
-# How to delete a user ?
+How to delete a user ?
 
 ```shell
 userdel <name_of_user>
@@ -32,7 +32,7 @@ userdel -r (will remove home directory)
 userdel -f (force delete even if the user is logged in)
 ```
 
-# How to modify a user ?
+How to modify a user ?
 
 - To add user to a new group, but default group will remain same.
 
@@ -46,7 +46,7 @@ usermod -G <group_name><user_name>
 usermod -g <group_name><user_name>
 ```
 
-# Other usermod options:
+Other usermod options:
 
 - **-m -d** /home/newfolder (to move the content of home folder to this new folder)
 
@@ -68,7 +68,7 @@ usermod -L <user_name>
 usermod -U <user_name>
 ```
 
-# How to create a group ?
+How to create a group ?
 
 ```shell
 groupadd <group_name>
@@ -76,28 +76,23 @@ groupadd <group_name>
 less /etc/group
 ```
 
-# To add a user to the group
+To add a user to the group
 
 ```bash
 usermod -aG <group_name><user_name>
 ```
 
-# How to delete a group ?
+How to delete a group ?
 
 ```bash
 groupdel <group_name>
 ```
 
-# To remove a user from the group
+To remove a user from the group
 
 ```bash
 gpasswd -d <user_name><group_name>
 ```
 
-# Files
 
-### In files, we can check
 
-- In a group how many users are added
-- UserId GoupID HomeDIR and Shell Type, description about user
-- In shadow file, when was last password changed, max day to expire etc

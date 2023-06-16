@@ -18,7 +18,6 @@
 
 ```jsx
 useradd <user_name>
-
 useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name>
 ```
 
@@ -27,3 +26,11 @@ useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <u
 ```jsx
 id <user_name>
 ```
+
+**How to delete a user?**
+
+```jsx
+userdel <name_of_user>
+userdel -r  # will remove home directory
+userdel -f  # force delete even if the user is logged in
+``` 

@@ -14,7 +14,7 @@
 * /etc/group
 * /etc/shadow
 
-### How to create a user ?
+**How to create a user ?**
 
 ```jsx
 useradd <user_name>
@@ -22,7 +22,7 @@ useradd <user_name>
 useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name>
 ```
 
-### How to identify if a user is created ?
+**How to identify if a user is created ?**
 
 ```jsx
 id <user_name>

@@ -48,3 +48,19 @@ usermod -G <group_name> <user_name>
 ```bash
 usermod -g <group_name> <user_name>
 ```
+
+**Other usermod options:**
+
+```bash
+-m -d /home/newfolder  #to move the content of home folder to this new folder
+-p                     #we can use passwd command also)
+-s                     #shell type
+-L -U                  #Lock/UnLock a user
+```
+
+```bash
+usermod -m -d /home/<user_name><user_name>
+ls -ld newfolder/
+passwd <user_name>
+su - <user_name>
+```

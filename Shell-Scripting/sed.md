@@ -2,10 +2,10 @@
 
 - Sed command statds for stream editor.
 - Sed command performs lot of functions like :
-- a) - Viewing file contents
-- b) - Searching
-- c) - Find and Replace
-- d) - Insertion and deletion
+- a - Viewing file contents
+- b - Searching
+- c - Find and Replace
+- d - Insertion and deletion
 - Sed also supports regular expressions which allows it perform complex pattern matching.
 
 # Avantages of sed over vi/vim editor:

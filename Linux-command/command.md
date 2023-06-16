@@ -1,4 +1,4 @@
-# Basic Commands
+# Commands
 
 ```bash
 pwd                  # Print Working Directory.
@@ -50,4 +50,39 @@ tail                 # Displays the tail of text in the file. (ex: tail -2 textf
 sort                 # Allows you to sort the words in the textfile. (ex: sort textfile.txt).
 
 uniq                 # Allows to avoid the repetition of the text. (ex: sort textfile.txt | uniq).
+```
+
+# FS Structure Description
+
+```bash
+/boot        # Having files used by boot loader (ex:grub)
+
+/dev         # System devices files (ex:speakers, keyboard etc)
+
+/etc         # Have configuration
+
+/usr/bin     # Binaries
+
+/usr/sbin    # System binaries of the root directory
+
+/opt         # Installation of optional add-on applications
+
+/proc        # Running process
+
+/usr/lib     # C Program bibary files needed by commands and apps
+
+/tmp         # Having temporary files
+
+/home        # Directories of users
+
+/root        # Home directory of root user
+
+/var         # Sytem logs
+
+/run         # System daemons that start very early (ex: systemd and udev) to store temporary runtime files like PID 
+
+/mnt         # To mount external filesystem (ex: NFS)
+
+/media       # For CDROM Mounts
+
 ```

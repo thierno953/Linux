@@ -16,7 +16,7 @@
 
 **How to create a user ?**
 
-```jsx
+```bash
 useradd <user_name>
 useradd -g <group_name> -s /bin/bash -c "description" -m -d /home/<user_name> <user_name>
 ```
@@ -29,8 +29,8 @@ id <user_name>
 
 **How to delete a user?**
 
-```jsx
+```bash
 userdel <name_of_user>
-userdel -r  # will remove home directory
-userdel -f  # force delete even if the user is logged in
+userdel -r  #will remove home directory
+userdel -f  #force delete even if the user is logged in
 ``` 

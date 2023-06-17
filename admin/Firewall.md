@@ -20,7 +20,7 @@
 rpm -qa | grep firewall
 ```
 
-***Stop/Start firewall service?**
+Stop/Start firewall service?
 
 ```bash
 systemctl start/enable firewall
@@ -71,14 +71,43 @@ To get firewall rules for a specific zone
 firewall-cmd --zone=public --list-all
 ```
 
-**To add or remove a service**
+To add or remove a service
 
 ```bash
-firewall-cmd --add-service=<name_of_service>
-firewall-cmd --remove-service=<name_of_service>
+firewall-cmd --add-service=<name_of_service> --permanent
+# example: firewall-cmd --add-service=http --permanent
+firewall-cmd --remove-service=<name_of_service> --permanent
 ```
-**To reload the config**
+To reload the config
 
 ```bash
 firewall-cmd --reload
+```
+
+To add or remove a port
+
+```bash
+firewall-cmd --add-port=20201/tcp
+# example: firewall-cmd --add-port=80/tcp
+firewall-cmd --list-all
+firewall-cmd --remove-port=20201/tcp
+```
+
+To block incoming traffic from an IP 
+
+```bash
+firewall-cmd --add-rich-rule 'rule family="ipv4" source address="192.168.0.0" reject'
+firewall-cmd --list-rich-rules
+```
+
+To block outgoing traffic to a IP or URL
+
+```bash
+firewall-cmd --direct --add-rule ipv4 filter OUTPUT 0 -d <IP> -j DROP 
+```
+
+To block ICMP incoming traffic
+
+```bash
+firewall-cmd --add-icmp-block-inversion 
 ```

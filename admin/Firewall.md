@@ -107,4 +107,3 @@ To block ICMP incoming traffic
 firewall-cmd --add-icmp-block-inversion 
 ```
 
-bvjxaguagtmkktft

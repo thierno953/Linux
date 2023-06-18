@@ -73,6 +73,12 @@ passwd <user_name>
 su - <user_name>
 ```
 
+**To change ownership**
+
+```bash
+chown <user_name> myfile.txt
+```
+
 **How to create a group?**
 
 ```bash
@@ -84,6 +90,12 @@ less /etc/group
 
 ```bash
 usermod -aG <group_name> <user_name>
+```
+
+**To change group**
+
+```bash
+chgrp <group_name> myfile.txt
 ```
 
 **How to delete a group ?**

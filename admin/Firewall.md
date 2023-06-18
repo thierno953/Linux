@@ -17,16 +17,16 @@
 **Check if firewall service is installed?**
 
 ```bash
-rpm -qa | grep firewall
+rpm -qa | grep firewalld
 ```
 
 Stop/Start firewall service?
 
 ```bash
-systemctl start/enable firewall
-systemctl stop/disable firewall
-systemctl status firewall
-systemctl restart firewall
+systemctl start/enable firewalld
+systemctl stop/disable firewalld
+systemctl status firewalld
+systemctl restart firewalld
 ```
 
 Check the rules of firewall
@@ -47,12 +47,6 @@ To reload the config of firewall
 firewall-cmd --reload
 ``` 
 
-To get firewall rules for a specific zonz
-
-```bash
-firewall-cmd --zone=public --list-all
-```
-
 Firewall has multiple zones, to get list
 
 ```bash
@@ -71,7 +65,7 @@ To get firewall rules for a specific zone
 firewall-cmd --zone=public --list-all
 ```
 
-To add or remove a service
+To add or remove a service --permanent
 
 ```bash
 firewall-cmd --add-service=<name_of_service> --permanent
@@ -81,16 +75,17 @@ firewall-cmd --remove-service=<name_of_service> --permanent
 To reload the config
 
 ```bash
+systemctl restart firewalld.service
 firewall-cmd --reload
 ```
 
 To add or remove a port
 
 ```bash
-firewall-cmd --add-port=20201/tcp
+firewall-cmd --add-port=80/tcp
 # example: firewall-cmd --add-port=80/tcp
 firewall-cmd --list-all
-firewall-cmd --remove-port=20201/tcp
+firewall-cmd --remove-port=80/tcp
 ```
 
 To block incoming traffic from an IP 
@@ -111,3 +106,5 @@ To block ICMP incoming traffic
 ```bash
 firewall-cmd --add-icmp-block-inversion 
 ```
+
+bvjxaguagtmkktft

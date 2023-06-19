@@ -31,3 +31,21 @@ netstat -i     #to get the list of all the interface
 netstat -ap | grep <process_name>  #which port a process is using
 netstat -s     #how to see statistics by protocol?
 ```
+
+example:
+
+```bash
+netstat -putan | grep :22
+netstat
+netstat | more
+netstat -a | more
+netstat -at | more
+netstat -au | more
+netstat -au6 | more
+netstat -atl | more
+netstat -atln | more
+netstat -atlnp | more
+netstat -r
+netstat -i
+netstat -s
+```

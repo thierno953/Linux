@@ -1,0 +1,13 @@
+#!/bin/bash
+
+testing=$(date)
+
+echo "The date and time are: $testing"
+
+######################
+
+NAME="John"
+
+unset NAME
+
+echo "$NAME"

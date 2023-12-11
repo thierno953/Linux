@@ -782,7 +782,7 @@ searcher.
 
 	> chmod 700 filename			(to modify permissions of a file)
 	> chmod -R 700 directoryname	(give permissions to entire directory including files)
-	> chomd reference java raju  	(call the reference permissions)
+	> chomd reference java thierno  	(call the reference permissions)
 
 		read 		> r	> 4
 		write 		> w	> 2
@@ -961,7 +961,7 @@ searcher.
 	
 	# NORMAL USERS:
 	---------------
-	> Normal users are created by the root user, like Raju, Sara, max ....etc.
+	> Normal users are created by the root user, like thierno, Sara, max ....etc.
 	> Normal users accounts have no write have no write access to anything on the system except their home directory.
 		Login prompt is "$"
 
@@ -990,14 +990,14 @@ searcher.
 	colon delimited list containing the following information:
 			root:0:0:root:/root:/bin/bash		
 	
-	> cat /etc/passwd | grep -i raju
+	> cat /etc/passwd | grep -i thierno
 			
 	/etc/shadow file:
 	> this file must be world -readable, there is a risk involved in storing everyone's password in /etc/passwd.
 	True, the passwords are encrypted.
-			raju:$1$.QKDPc5E$SWlkjRWexrXYgc98F:12825:0:90:5:30:13096:		
+			thierno:$1$.QKDPc5E$SWlkjRWexrXYgc98F:12825:0:90:5:30:13096:		
 	
-	> cat /etc/shadow | grep -i raju				(ch eck password add to user or not)
+	> cat /etc/shadow | grep -i thierno				(ch eck password add to user or not)
 	> cat /etc/passwd | grep -i username			(to verify usr is created ot not)
 	
 	> useradd username								(create a new user)
@@ -1077,18 +1077,18 @@ searcher.
 	---------------------------
 	> In Red Hat Linux uses user private group (UPG) scheme. Acording to UPG scheme, you create any user
 	account, the user consists the primary group with same name and same ID.
-	> for example, if a user is created with the name Raju, then a primary group of that user will be Raju only.
+	> for example, if a user is created with the name thierno, then a primary group of that user will be thierno only.
 
 	# FILES CONTROLLING GROUPS:
 	--------------------------
 		> /etc/group files:
 			This file is world-readable and contains a list of groups, each on a separate line.
-					family:x:502:raju,ramu,jai
+					family:x:502:thierno,ramu,jai
 		
 		 > /etc/gshadow file:
 			this file is readable only by the root user and contains an encrypted password for each group, 
 			as well as group membership and administrator information.
-					family:!!:raju,ramu,jai
+					family:!!:thierno,ramu,jai
 
 	> groupadd									(create a new group)
 	> cat /etc/group | grep -i groupname		(status of the group)
@@ -2483,11 +2483,11 @@ STORAGE MANAGEMENT ON LINUX: avinash
 			
 	> yum install acl -y								(install acl package)
 	
-	> setfacl -m u:raju:x /directory_name				(set the acl for raju user for execute only cloud-data folder)
-	> setfacl -m :u:raju:- /directory_name				(remove user name)
-	> setfacl -m u:rajux,u:sai:rwx /directory_name		(set the acl for multiple users)
-	> setfacl -x u:raju: /directory_name				(remove all permissins for raju user)
-	> setfacl -x u:raju:,u:sai: /directory_name			(remove all permissins for multiple user)
+	> setfacl -m u:thierno:x /directory_name				(set the acl for thierno user for execute only cloud-data folder)
+	> setfacl -m :u:thierno:- /directory_name				(remove user name)
+	> setfacl -m u:thiernox,u:sai:rwx /directory_name		(set the acl for multiple users)
+	> setfacl -x u:thierno: /directory_name				(remove all permissins for thierno user)
+	> setfacl -x u:thierno:,u:sai: /directory_name			(remove all permissins for multiple user)
 	
 	> setfacl -m g:sales:x /directory_name				(set the acl for sales group for execute only cloud-data folder)
 	> setfacl -m g:sales:x,g:dev:rwx /directory_name	(set the acl for multiple ugroups)

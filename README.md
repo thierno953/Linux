@@ -167,8 +167,8 @@ we can create 60 thousend user accounts.
 	> ./filename.sh				(run the script)
 	> sh filename.sh 			(run the script)
 	
-	> scp -rv test.zip sukhanth@52.254.11:/home/mayur					(copy file one server to another in linux)
-	> scp -i /home/kumar/test.pem sukhanth@52.254.11:/home/sukhanth		(copy pem file)
+	> scp -rv test.zip thierno@52.254.11:/home/mayur					(copy file one server to another in linux)
+	> scp -i /home/kumar/test.pem thierno@52.254.11:/home/thierno		(copy pem file)
 	
 	> curl
 	> curl -sL					(browse the url)
@@ -330,9 +330,9 @@ we can create 60 thousend user accounts.
 	> whereis	file/directory name		(search the file/directory)
 	
 	> echo 	(Print any text that follows the command)
-	> echo "<h1> sukhanth </h1>" > index.html
-	> echo "<h2> sukhanth </h2>" >> index.html
-	> echo "<h2> sukhanth </h2>" >> /var/www/html/index.html
+	> echo "<h1> thierno </h1>" > index.html
+	> echo "<h2> thierno </h2>" >> index.html
+	> echo "<h2> thierno </h2>" >> /var/www/html/index.html
 	
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -502,7 +502,7 @@ In Linux we have 3 types of Users:
 	
 	> vim etc/ssh/sshd_cofig		(authencating ssh login for users) 
 	
-	AllowUsers sukhanth root
+	AllowUsers thierno root
 	AllowGroups administrators
 	
 	> systemctl restart sshd
@@ -514,13 +514,13 @@ In Linux we have 3 types of Users:
 	> hostnamectl				(show complete details of server)
 	> env 						( display the all enviromental variables)
 	> hostname					(it gives a system name (computer name))
-	> hostnamectl set-hostname sukhanth		(for change the host name)
+	> hostnamectl set-hostname thierno		(for change the host name)
 	> cat /etc/hostname			(display hostname list location)
 	
 	> ping google.com			(call brower)
 	> ping google.com -c4 		(pocket internet gopher)
 	> dig domainname			(domain infomation gopher)
-	> dig ns sukhanth.ml		(shows the name server records)
+	> dig ns thierno.ml		(shows the name server records)
 	> mtr domainname 			(connectivity between local device and website)
 	> ss						(shows the port status)
 	> ss -lt					(shows services running on TCP ports)

@@ -12,11 +12,14 @@ Make sure script has execute permission **rwx**
 - Run using 
 
 ```
-vi script.sh         #Create script
+#Create script
+vi script.sh         
 
 #!/bin/bash echo "Hello World"
 
-chmod +x script.sh   #Permission set.
+#Permission set.
+chmod +x script.sh   
 
-./script.sh          #To Execute the shell script
+#To Execute the shell script
+./script.sh          
 ```
